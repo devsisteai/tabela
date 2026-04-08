@@ -1,8 +1,8 @@
 // Tabelas de taxas
 const taxasMasterVisa = {
-    1: 5.50, 2: 6.30, 3: 7.05, 4: 7.64, 5: 8.23, 6: 8.81,
-    7: 9.62, 8: 10.21, 9: 10.69, 10: 11.40, 11: 11.97, 12: 12.55,
-    13: 14.34, 14: 14.93, 15: 15.51, 16: 16.09, 17: 16.66, 18: 17.60
+    1: 5.50, 2: 6.30, 3: 6.90, 4: 7.40, 5: 8.10, 6: 8.60,
+    7: 9.50, 8: 10.00, 9: 10.50, 10: 11.00, 11: 11.70, 12: 12.10,
+    13: 13.80, 14: 14.40, 15: 15.00, 16: 15.50, 17: 16.10, 18: 17.00
 };
 
 const taxasOutros = {
@@ -171,8 +171,9 @@ function generatePrintContent() {
 
     printContent.innerHTML = `
         <div class="print-header">
-            <div class="print-title">POINT CELL</div>
-            <div class="print-subtitle" style="margin-top: 5px; font-size: 0.9rem;">Cartão: ${sim.cardBrandText}</div>
+            <div class="print-title">Claudemir Som</div>
+            <div class="print-subtitle" style="margin-top: 5px; font-size: 0.9rem;">📞 79 9 9998-4527</div>
+            <div class="print-subtitle" style="margin-top: 3px; font-size: 0.85rem;">Cartão: ${sim.cardBrandText}</div>
         </div>
         
         <div class="print-section-title">
@@ -240,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Efeito de digitação no título
     const title = document.querySelector('.header h1');
     if (title) {
-        const text = title.textContent;
+        const text = 'Claudemir Som';
         title.textContent = '';
         let i = 0;
         const typeWriter = () => {
